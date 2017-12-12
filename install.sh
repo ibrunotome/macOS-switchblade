@@ -11,6 +11,7 @@ brew cask install datagrip &&
 brew cask install visual-studio-code && \
 brew cask install clipy && \
 brew cask install docker && \
+brew cask install postman && \
 brew cask install google-chrome && \
 brew cask install firefox && \
 brew cask install spotify && \
