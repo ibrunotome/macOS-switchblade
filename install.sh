@@ -11,6 +11,7 @@ brew cask install datagrip &&
 brew cask install visual-studio-code && \
 brew cask install clipy && \
 brew cask install mariadb && \
+brew cask install redis && \
 brew cask install docker && \
 brew cask install postman && \
 brew cask install google-chrome && \
