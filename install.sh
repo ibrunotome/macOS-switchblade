@@ -7,10 +7,11 @@ brew tap caskroom/cask
 # Install apps
 brew cask install phpstorm && \
 brew cask install pycharm-ce && \
-brew cask install datagrip && 
+brew cask install datagrip && \
 brew cask install visual-studio-code && \
 brew cask install clipy && \
 brew cask install mariadb && \
+brew services start mariadb && \
 brew cask install redis && \
 brew cask install docker && \
 brew cask install postman && \
