@@ -13,6 +13,7 @@ brew cask install clipy && \
 brew cask install mariadb && \
 brew services start mariadb && \
 brew cask install redis && \
+brew services start redis && \
 brew cask install docker && \
 brew cask install postman && \
 brew cask install google-chrome && \
