@@ -10,12 +10,13 @@ brew cask install pycharm-ce
 brew cask install datagrip
 brew cask install visual-studio-code
 brew cask install clipy
-brew cask install mariadb
+brew install mariadb
 brew services start mariadb
-brew cask install redis
+brew install redis
 brew services start redis
 brew cask install docker
 brew cask install postman
+brew install node
 brew cask install google-chrome
 brew cask install firefox
 brew cask install spotify
