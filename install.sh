@@ -1,22 +1,24 @@
 # Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install php72-pcntl
+brew install node
+brew install mariadb
+brew services start mariadb
+brew install redis
+brew services start redis
+
 # Install brew cask
 brew tap caskroom/cask
 
-# Install apps
+# Install apps with GUI
 brew cask install phpstorm
 brew cask install pycharm-ce
 brew cask install datagrip
 brew cask install visual-studio-code
 brew cask install clipy
-brew install mariadb
-brew services start mariadb
-brew install redis
-brew services start redis
 brew cask install docker
 brew cask install postman
-brew install node
 brew cask install google-chrome
 brew cask install firefox
 brew cask install spotify
