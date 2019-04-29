@@ -7,10 +7,7 @@ xcode-select --install
 brew install zsh
 brew install go
 brew install node
-brew install yarn --without-node
-
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+brew install yarn
 
 # Install brew cask
 brew tap caskroom/cask
@@ -32,3 +29,8 @@ brew cask install spotify
 brew cask install telegram
 brew cask install visual-studio-code
 brew cask install whatsapp
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Then customize iTerm on https://gist.github.com/kevin-smets/8568070
