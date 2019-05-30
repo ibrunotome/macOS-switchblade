@@ -30,6 +30,10 @@ brew cask install telegram
 brew cask install visual-studio-code
 brew cask install whatsapp
 
+# Setup .vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cp .vimrc ~/.vimrc
+
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
