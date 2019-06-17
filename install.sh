@@ -15,6 +15,8 @@ brew tap caskroom/cask
 # Install apps with GUI
 brew cask install brave-browser
 brew cask install clipy
+brew cask install devdocs
+brew cask install discord
 brew cask install docker
 brew cask install dropbox
 brew cask install firefox
@@ -22,6 +24,7 @@ brew cask install graphql-playground
 brew cask install google-chrome
 brew cask install google-cloud-sdk
 brew cask install iterm2
+brew cask install insomnia
 brew cask install jetbrains-toolbox
 brew cask install postman
 brew cask install slack
