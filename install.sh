@@ -4,40 +4,39 @@ xcode-select --install
 # Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install zsh
 brew install go
+brew install kubectl
 brew install node
+brew install starship
 brew install yarn
+brew install zsh
 
 # Install brew cask
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 # Install apps with GUI
-brew cask install brave-browser
-brew cask install clipy
-brew cask install devdocs
-brew cask install discord
-brew cask install docker
-brew cask install dropbox
-brew cask install firefox
-brew cask install graphql-playground
-brew cask install google-chrome
-brew cask install google-cloud-sdk
-brew cask install iterm2
-brew cask install insomnia
-brew cask install jetbrains-toolbox
-brew cask install postman
-brew cask install slack
-brew cask install spotify
-brew cask install telegram
-brew cask install visual-studio-code
-brew cask install whatsapp
+brew install --cask brave-browser
+brew install --cask clipy
+brew install --cask devdocs
+brew install --cask discord
+brew install --cask docker
+brew install --cask dropbox
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask google-cloud-sdk
+brew install --cask graphql-playground
+brew install --cask iterm2
+brew install --cask jetbrains-toolbox
+brew install --cask lens
+brew install --cask microsoft-edge
+brew install --cask notion
+brew install --cask postman
+brew install --cask sizzy
+brew install --cask slack
+brew install --cask spotify
+brew install --cask telegram
+brew install --cask visual-studio-code
+brew install --cask whatsapp
 
 # Setup .vimrc
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp .vimrc ~/.vimrc
-
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Then customize iTerm on https://gist.github.com/kevin-smets/8568070
