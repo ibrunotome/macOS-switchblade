@@ -2,12 +2,13 @@
 xcode-select --install
 
 # Install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install go
 brew install kubectl
 brew install node
 brew install starship
+brew install wget
 brew install yarn
 brew install zsh
 
@@ -17,7 +18,6 @@ brew tap homebrew/cask
 # Install apps with GUI
 brew install --cask brave-browser
 brew install --cask clipy
-brew install --cask devdocs
 brew install --cask discord
 brew install --cask docker
 brew install --cask dropbox
@@ -44,7 +44,7 @@ sh -c “$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-eval “$(starship init zsh)”
+eval "$(starship init zsh)"
 
 mkdir -p ~/.config && cp starship.toml ~/.config/starship.toml
 
