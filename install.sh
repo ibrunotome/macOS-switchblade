@@ -11,6 +11,8 @@ brew install starship
 brew install wget
 brew install yarn
 brew install zsh
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 
 # Install brew cask
 brew tap homebrew/cask
@@ -39,13 +41,16 @@ brew install --cask visual-studio-code
 brew install --cask whatsapp
 
 # Setup ohmyzsh
-sh -c “$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)”
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+echo "source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" >> ~/.zshrc
+echo "source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" >> ~/.zshrc
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc
+echo "$(starship init zsh)" >> ~/.zshrc
 
-eval "$(starship init zsh)"
-
+# Setup starship.toml
 mkdir -p ~/.config && cp starship.toml ~/.config/starship.toml
 
 # Setup .vimrc
