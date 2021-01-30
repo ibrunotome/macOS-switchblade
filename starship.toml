@@ -1,167 +1,86 @@
-add_newline = true
-
-prompt_order = [
-    "username",
-    "memory_usage",
-    "hostname",
-    "kubernetes",
-    "directory",
-    "git_branch",
-    "git_commit",
-    "git_state",
-    "git_status",
-    "hg_branch",
-    "package",
-    "dotnet",
-    "elixir",
-    "elm",
-    "golang",
-    "haskell",
-    "java",
-    "nodejs",
-    "php",
-    "python",
-    "ruby",
-    "rust",
-    "terraform",
-    "nix_shell",
-    "conda",
-    "aws",
-    "env_var",
-    "crystal",
-    "line_break",
-    "battery",
-    "cmd_duration",
-    "jobs",
-    "time",
-    "character",
-]
-
 [battery]
 full_symbol = "🔋"
-charging_symbol = "⚡️"
-discharging_symbol = "💀"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
 
 [[battery.display]]
-threshold = 10
+threshold = 30
 style = "bold red"
 
-[[battery.display]]
-threshold = 60
-style = "bold yellow"
-
-[[battery.display]]
-threshold = 100
-style = "bold green"
-
 [character]
-# symbol = "➜"
-error_symbol = "✗"
-use_symbol_for_status = true
+error_symbol = "[✖](bold red) "
 
 [cmd_duration]
-min_time = 500
-prefix = "tooks "
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = " took [$duration]($style)"
 
 [directory]
-truncation_length = 6
-truncate_to_repo = true
-prefix = "in "
-style = "bold cyan"
-disabled = false
-
-# [env_var]
-# variable = "SHELL"
-# default = "Zsh"
-# prefix = "<"
-# suffix = ">"
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
-# symbol = "🌱 "
-truncation_length = 8
-truncation_symbol = "..."
-style = "bold purple"
-disabled = false
+format = " [$symbol$branch]($style) "
+symbol = "🍣 "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
 
 [git_state]
-cherry_pick = "CHERRY PICKING"
-rebase = "REBASING"
-merge = "MERGING"
-revert = "REVERTING"
-bisect = "BISECTING"
-am = "AM"
-am_or_rebase = "AM/REBASE"
 progress_divider = " of "
-style = "bold yellow"
-disabled = false
 
-# [git_status]
-# conflicted = "🏳"
-# ahead = "🏎💨"
-# behind = "😰"
-# diverged = "😵"
-# untracked = "🤷‍"
-# stashed = "📦"
-# modified = "📝"
-# staged.value = "++"
-# staged.style = "green"
-# staged_count.enabled = true
-# staged_count.style = "green"
-# renamed = "👅"
-# deleted = "🗑"
-
-# [[git_status.count]]
-# enabled = true
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+untracked = "🛤️  ×${count}"
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = "🗃️  ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
 
 [hostname]
 ssh_only = false
-prefix = "🤖"
-# suffix = "⟫"
-trim_at = "."
-disabled = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
 
-# [jobs]
-# symbol = "+ "
-# threshold = 1
-
-[line_break]
-disabled = false
-
-# [memory_usage]
-# disabled = false
-# show_percentage = true
-# show_swap = false
-# threshold = -1
-# symbol = " "
-# separator = "/"
-# style = "bold dimmed white"
-
-[nodejs]
-symbol = "⬢ "
+[julia]
+format = "[$symbol$version]($style) "
+symbol = "ஃ "
 style = "bold green"
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+show_percentage = true
+show_swap = true
+threshold = 70
+style = "bold dimmed white"
 disabled = false
 
-# [package]
-# symbol = "📦 "
-# style = "bold red"
-# disabled = false
+[package]
+disabled = true
 
 [python]
-symbol = "🐍 "
-pyenv_version_name = false
-pyenv_prefix = "pyenv"
-style = "bold yellow"
-disabled = false
+format = "[$symbol$version]($style) "
+style = "bold green"
 
-# [time]
-# format = "🕙%T"
-# style_root = "bold red"
-# style_user = "bold yellow"
-# show_always = true
-# disabled = false
+[rust]
+format = "[$symbol$version]($style) "
+style = "bold green"
+
+[time]
+time_format = "%T"
+format = "🕙 $time($style) "
+style = "bright-white"
+disabled = false
 
 [username]
-style_root = "bold red"
-style_user = "bold yellow"
+style_user = "bold dimmed blue"
 show_always = false
-disabled = false
