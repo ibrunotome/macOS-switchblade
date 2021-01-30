@@ -38,5 +38,15 @@ brew install --cask telegram
 brew install --cask visual-studio-code
 brew install --cask whatsapp
 
+# Setup ohmyzsh
+sh -c “$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)”
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+eval “$(starship init zsh)”
+
+mkdir -p ~/.config && cp starship.toml ~/.config/starship.toml
+
 # Setup .vimrc
 cp .vimrc ~/.vimrc
