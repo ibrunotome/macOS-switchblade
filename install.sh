@@ -7,6 +7,7 @@ xcode-select --install
 brew install go
 brew install kubectl
 brew install node
+brew install php
 brew install starship
 brew install wget
 brew install yarn
@@ -27,7 +28,6 @@ brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask google-cloud-sdk
 brew install --cask graphql-playground
-brew install --cask iterm2
 brew install --cask jetbrains-toolbox
 brew install --cask lens
 brew install --cask microsoft-edge
@@ -43,6 +43,7 @@ brew install --cask whatsapp
 # Setup ohmyzsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo "alias sail='bash vendor/bin/sail'" >> ~/.zshc
 echo "source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" >> ~/.zshrc
 echo "source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" >> ~/.zshrc
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
