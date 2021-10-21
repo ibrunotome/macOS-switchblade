@@ -43,9 +43,8 @@ brew install --cask whatsapp
 # Setup ohmyzsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "alias sail='bash vendor/bin/sail'" >> ~/.zshc
-echo "alias gbrmain='git branch | grep -v main | xargs git branch -D'" >> ~/.zshc
-echo "alias gbrmaster='git branch | grep -v master | xargs git branch -D'" >> ~/.zshc
+echo "alias gbrmain='git branch | grep -v main | xargs git branch -D'" >> ~/.zshrc
+echo "alias gbrmaster='git branch | grep -v master | xargs git branch -D'" >> ~/.zshrc
 echo "source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" >> ~/.zshrc
 echo "source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" >> ~/.zshrc
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
