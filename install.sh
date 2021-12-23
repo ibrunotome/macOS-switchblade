@@ -22,22 +22,16 @@ brew install zsh-syntax-highlighting
 brew tap homebrew/cask
 
 # Install apps with GUI
-brew install --cask brave-browser
 brew install --cask clipy
-brew install --cask discord
 brew install --cask docker
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask google-cloud-sdk
-brew install --cask graphql-playground
 brew install --cask jetbrains-toolbox
 brew install --cask lens
-brew install --cask microsoft-edge
-brew install --cask notion
-brew install --cask postman
+brew install --cask paw
 brew install --cask sizzy
-brew install --cask slack
 brew install --cask spotify
 brew install --cask telegram
 brew install --cask visual-studio-code
