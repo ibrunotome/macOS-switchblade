@@ -10,10 +10,10 @@ source ~/.zshrc
 brew install go
 brew install kubectl
 brew install node
+brew install pnpm
 brew install php
 brew install starship
 brew install wget
-brew install yarn
 brew install zsh
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
@@ -22,7 +22,6 @@ brew install zsh-syntax-highlighting
 brew tap homebrew/cask
 
 # Install apps with GUI
-brew install --cask clipy
 brew install --cask docker
 brew install --cask dropbox
 brew install --cask firefox
@@ -31,11 +30,11 @@ brew install --cask google-cloud-sdk
 brew install --cask jetbrains-toolbox
 brew install --cask lens
 brew install --cask paw
+brew install --cast raycast
 brew install --cask sizzy
 brew install --cask spotify
 brew install --cask telegram
 brew install --cask visual-studio-code
-brew install --cask whatsapp
 
 # Setup ohmyzsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
