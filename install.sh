@@ -7,6 +7,9 @@ xcode-select --install
 echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
 source ~/.zshrc
 
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
+
 brew install go
 brew install kubectl
 brew install node
@@ -18,10 +21,6 @@ brew install zsh
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
-# Install brew cask
-brew tap homebrew/cask
-
-# Install apps with GUI
 brew install --cask docker
 brew install --cask dropbox
 brew install --cask firefox
@@ -35,6 +34,7 @@ brew install --cask sizzy
 brew install --cask spotify
 brew install --cask telegram
 brew install --cask visual-studio-code
+brew install --cask font-jetbrains-mono-nerd-font
 
 # Setup ohmyzsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
