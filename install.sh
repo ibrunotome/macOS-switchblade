@@ -15,6 +15,7 @@ brew install kubectl
 brew install node
 brew install pnpm
 brew install php
+brew install composer
 brew install starship
 brew install wget
 brew install zsh
@@ -29,7 +30,7 @@ brew install --cask google-cloud-sdk
 brew install --cask jetbrains-toolbox
 brew install --cask lens
 brew install --cask paw
-brew install --cast raycast
+brew install --cask raycast
 brew install --cask sizzy
 brew install --cask spotify
 brew install --cask telegram
