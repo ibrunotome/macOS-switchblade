@@ -37,6 +37,6 @@ brew install --cask font-jetbrains-mono-nerd-font
 # Setup ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-cp .zshrc ~/.zshrc
+cp zshrc ~/.zshrc
 cp .vimrc ~/.vimrc
 cp starship.toml ~/.config/starship.toml
