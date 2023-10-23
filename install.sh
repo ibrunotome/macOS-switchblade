@@ -15,6 +15,7 @@ brew install pnpm
 brew install php
 brew install composer
 brew install starship
+brew install cloud-sql-proxy
 brew install wget
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
