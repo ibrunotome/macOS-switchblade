@@ -8,6 +8,7 @@ xcode-select --install
 
 brew tap homebrew/cask-fonts
 
+brew install orbstack
 brew install go
 brew install kubectl
 brew install node
@@ -20,7 +21,6 @@ brew install wget
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
-brew install --cask orbstack
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
