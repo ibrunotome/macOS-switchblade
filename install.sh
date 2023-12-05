@@ -20,7 +20,7 @@ brew install wget
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
-brew install --cask docker
+brew install --cask orbstack
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
