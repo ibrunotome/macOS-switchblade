@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "bmewburn.vscode-intelephense-clien",
+    "dbaeumer.vscode-eslint",
+    "golang.go",
+    "laravel.vscode-laravel",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "vue.volar",
+    "wakatime.vscode-wakatime"
+  ]
+}
