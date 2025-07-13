@@ -11,12 +11,11 @@
   },
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.fontFamily": "Input Mono, monospace",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.guides.bracketPairs": "active",
   "editor.hover.sticky": true,
   "editor.inlineSuggest.enabled": true,
   "editor.lineNumbers": "interval",
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
   "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
@@ -140,9 +139,9 @@
   "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "window.autoDetectColorScheme": true,
-  "window.dialogStyle": "custom",
-  "window.nativeTabs": true,
+  "window.commandCenter": true,
   "window.title": "${rootName}",
   "window.titleBarStyle": "custom",
   "workbench.editor.closeOnFileDelete": true,
@@ -157,5 +156,8 @@
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
-  "workbench.tree.indent": 10
+  "workbench.tree.indent": 10,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  }
 }
