@@ -1,6 +1,4 @@
 {
-  "cSpell.allowCompoundWords": true,
-  "cSpell.language": "en,en-US,pt-BR",
   "css.lint.hexColorLength": "ignore",
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -17,6 +15,7 @@
   "editor.inlineSuggest.enabled": true,
   "editor.lineNumbers": "interval",
   "editor.renderWhitespace": "boundary",
+  "editor.rulers": [120],
   "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
@@ -29,7 +28,6 @@
     "error"
   ],
   "errorLens.excludeBySource": [
-    "cSpell",
     "eslint"
   ],
   "eslint.codeAction.showDocumentation": {
@@ -97,6 +95,9 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -108,6 +109,7 @@
   },
   "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
   "githubPullRequests.fileListLayout": "tree",
+  "laravel-pint.enable": true,
   "scm.diffDecorationsGutterWidth": 2,
   "search.exclude": {
     "**/.git": true,
@@ -122,6 +124,8 @@
     "**/assets": true,
     "**/bower_components": true,
     "**/CHANGELOG*": true,
+    "**/composer.lock": true,
+    "**/_ide_helper*": true,
     "**/dist/**": true,
     "**/LICENSE*": true,
     "**/logs": true,
@@ -159,5 +163,23 @@
   "workbench.tree.indent": 10,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint",
+    "editor.formatOnSave": true
+  },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   }
 }
