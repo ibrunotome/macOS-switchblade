@@ -76,6 +76,7 @@
       "severity": "off"
     }
   ],
+  "eslint.runtime": "node",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -109,6 +110,7 @@
   },
   "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
   "githubPullRequests.fileListLayout": "tree",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "laravel-pint.enable": true,
   "scm.diffDecorationsGutterWidth": 2,
   "search.exclude": {
@@ -140,7 +142,6 @@
   "svg.preview.mode": "svg",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
@@ -162,24 +163,11 @@
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "Vue.volar",
   },
   "[php]": {
     "editor.defaultFormatter": "open-southeners.laravel-pint",
     "editor.formatOnSave": true
   },
-  "explorer.fileNesting.patterns": {
-    "*.ts": "${capture}.js",
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js",
-    "*.tsx": "${capture}.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
-    "*.sqlite": "${capture}.${extname}-*",
-    "*.db": "${capture}.${extname}-*",
-    "*.sqlite3": "${capture}.${extname}-*",
-    "*.db3": "${capture}.${extname}-*",
-    "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*"
-  }
+  "go.toolsManagement.autoUpdate": true
 }
